@@ -1,7 +1,8 @@
+const ethers = require('ethers');  
+const crypto = require('crypto')
 import React from 'react';
 import {View,Text} from 'react-native';
-var ethers = require('ethers');  
-var crypto = require('crypto')
+
 export default function AddressGen({props}) {
     var privateKey = "0x"+props.params()
     var wallet = new ethers.Wallet(privateKey)
