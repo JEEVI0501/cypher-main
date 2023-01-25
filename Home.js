@@ -26,7 +26,7 @@ export default function Home ({navigation}) {
           </View>
 
           <View style = {styles.button}>
-                <Button color="#dece3c" title = 'CREATE NEW WALLET' onPress={()=>navigation.navigate('SeedPhase')} />
+                <Button color="#dece3c" title = 'CREATE NEW WALLET' onPress={()=>navigation.navigate('AddressGen')} />
           </View>
           <View style = {styles.button}>
                 <Button   title = 'IMPORT EXISTING WALLET' />

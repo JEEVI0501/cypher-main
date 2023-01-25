@@ -1,17 +1,22 @@
 //const ethers = require('ethers');  
 //const crypto = require('crypto')
-
+const bip39 = require('bip39');
 import React,{useState} from 'react';
+import { useEffect } from 'react';
 import {View,Text} from 'react-native';
 
 export default function AddressGen({props}) {
-    //var privateKey = "0x";
-    //var wallet = new ethers.Wallet(privateKey);
-    const [addressData,setaddressData] = useState()
-    // addressData = ethWallet.fromMasterSeed(props.param);
+    const [addressData,setaddressData] = useState();
+    useEffect(() => {
+        addressData = ethWallet.fromMasterSeed(props.param);
+        setaddressData(addressData);
+
+    }, []);
+    
+    // 
   return (
     <View>
-        <Text>addressData</Text>
+        <Text>{addressData}</Text>
     </View>
   )
 }
