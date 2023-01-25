@@ -33,7 +33,7 @@ export default function seedPhase() {
             )}
         </View>
          <View style = {styles.button}>
-                <Button title = 'comfirm' onPress={()=>navigation.navigate('AddressGen',{mnemonic})}/>
+                <Button title = 'comfirm' onPress={()=>navigation.navigate('AddressGen')} />
         </View>
     </View>
   )
